@@ -1,0 +1,27 @@
+.form-selector{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__buttons{
+    display: flex;
+    margin-bottom: $s3;
+    font-size: 24px;
+    border-radius: $s1;
+    box-shadow: $component-shadow;
+    &__item{
+      transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
+      border: none;
+      border-top: solid 10px $text-color-invert;
+      color: $text-color-invert;
+      background: none;
+      outline: none;
+      padding: $s1;
+      width: 50%;
+      &.--focus{
+        border-top: solid 10px $done-color;
+        color: $done-color;
+      }
+    }
+  }
+}

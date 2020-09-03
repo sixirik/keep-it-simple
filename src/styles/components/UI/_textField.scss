@@ -1,0 +1,17 @@
+.text-field{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: $s1;
+    padding: $s1;
+    color: inherit;
+    border: none;
+    background: none;
+    border-bottom: solid  1px $text-color-invert;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: inherit;
+      opacity: 30%;
+    }
+  }

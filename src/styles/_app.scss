@@ -1,0 +1,45 @@
+.app{
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-areas: 'header header header''leftbar main rightbar';
+  grid-template-columns: 190px auto 300px;
+  grid-template-rows: 6vh 94vh ;
+
+}
+.header{
+  grid-area: header;
+  background: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: $s2;
+  padding-right: $s2;
+  box-shadow: $component-shadow;
+  position: relative;
+}
+
+.rightbar{
+  grid-area: rightbar;
+  border-left: solid 1px $divider;
+  overflow-y: auto;
+  display: flex;
+  padding: $s3;
+
+}
+.leftbar{
+  grid-area: leftbar;
+  padding-top: $s5;
+  border-right: solid 1px $divider;
+  overflow-y: auto;
+}
+.main{
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}

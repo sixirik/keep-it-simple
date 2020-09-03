@@ -1,0 +1,48 @@
+.todo-section{
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+&__text{
+  display: flex;
+  align-items: center;
+}
+  transition: background 0.09s ease-in-out, box-shadow 0.4s ease-in-out  ;
+  &:active{
+    background: $text-color-unfocus;
+  }
+  color: inherit;
+  padding: $s1;
+  &__icon{
+    margin-right: $s1;
+    font-size: 24px;
+  }
+  &__del{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &__icon{
+      color: $text-color-invert;
+      font-size: 24px;
+      cursor:pointer ;
+      transition: color 0.1s ease-in-out;
+      &:hover{
+        color: $text-color;
+      }
+      &:active{
+        color: #dc6060;
+      }
+    }
+  }
+}
+.todo-section-focus{
+  outline: solid 1px $text-color-unfocus;
+  box-shadow: $component-shadow;
+  border-left: solid 8px $text-color-unfocus;
+}

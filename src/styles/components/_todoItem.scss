@@ -1,0 +1,52 @@
+.todo-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $s4;
+  &__title{
+    margin-right: $s3;
+    font-size: 14px;
+    font-weight: 500;
+    &__icon{
+      font-size: 8px;
+      margin-right: $s1;
+    }
+  }
+  &__right{
+    display: flex;
+  }
+  &__button{
+    cursor: pointer;
+    background: $bg-color;
+    border: solid 1px $text-color-invert;
+    border-radius: 5px;
+    outline: none;
+    margin-left: $s2;
+    display: flex;
+    padding: $s1;
+    transition: background 0.09s ease-in-out, color 0.09s ease-in-out;
+    &:active{
+      background: $done-color;
+      color: white;
+    }
+    &__icon{
+      font-size: 18px;
+    }
+  }
+  &__tags{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    font-size: 12px;
+    &__item{
+      display: flex;
+      align-items: center;
+     margin-right: $s1;
+      &__icon{
+        margin-right: $s1;
+        font-size: 8px;
+
+      }
+    }
+  }
+}

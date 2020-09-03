@@ -1,0 +1,25 @@
+.add-button{
+  display: flex;
+  align-self: flex-end;
+  cursor: pointer;
+  background: $bg-color;
+  border: solid 1px $text-color-invert;
+  border-radius: 5px;
+  outline: none;
+  padding: $s1;
+  transition: background 0.09s ease-in-out, color 0.09s ease-in-out;
+  box-shadow: $component-shadow;
+  font-size: 12px;
+  align-items: center;
+  width: 100%;
+  margin-top:$s4 ;
+  margin-bottom:$s4 ;
+  &:active{
+    background: $done-color;
+    color: white;
+  }
+  &__icon{
+    font-size: 18px;
+    margin-right: $s1;
+  }
+}

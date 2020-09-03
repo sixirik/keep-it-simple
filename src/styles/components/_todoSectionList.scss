@@ -1,0 +1,22 @@
+.todo-section-list{
+
+  text-transform: capitalize ;
+  list-style: none;
+  padding: 0;
+  color: $text-color;
+  font-size: 14px;
+  background: $bg-color;
+
+&__subtitle{
+  color: $text-color;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: $s1;
+  margin-bottom: $s2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: $s1;
+}
+}
+

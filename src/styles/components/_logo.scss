@@ -1,0 +1,20 @@
+.logo{
+ cursor: pointer;
+  user-select: none;
+  color :$text-color-invert;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:border  0.4s ease-in-out,color 0.09s ease-in-out ;
+  &:active{
+    color: white;
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 14px;
+  }
+  &__icon{
+    font-size: 26px;
+    padding-right: $s1;
+  }
+}
